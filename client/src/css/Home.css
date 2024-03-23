@@ -1,0 +1,90 @@
+.home {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.nav {
+  height: 3.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  text-decoration: none;
+  list-style: none;
+  padding: 0rem 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: RGB(73, 80, 87);
+}
+
+.main-section {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 3.5rem);
+  background-color: #d7e6e5;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 50%;
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../assets/map.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l-main-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.l-sub-text {
+  font-size: 1.25rem;
+}
+.r-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.r-main-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.r-sub-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
