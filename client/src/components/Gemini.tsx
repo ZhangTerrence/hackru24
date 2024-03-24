@@ -22,7 +22,7 @@ export default function Gemini({ setReqLang }) {
     const prompt =
       "Please review my resume for me: " +
       data +
-      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{List Languages}. ";
+      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{Language, Language, Language}. ";
     // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
@@ -32,10 +32,11 @@ export default function Gemini({ setReqLang }) {
     const length = position[position.length - 1];
     console.log(length);
 
-    console.log(responseText);
+    const array = length.split("*");
+    console.log(array);
+    setReqLang(array);
 
-    const position = response.text().split(":").pop();
-    console.log(position);
+    console.log(responseText);
 
     setResponseTextGen(true);
     console.log("Completed");
@@ -104,7 +105,6 @@ export default function Gemini({ setReqLang }) {
               }}
             />
           </Document>
-          <div>{responseText}</div>
         </>
       ) : (
         <div>
@@ -133,6 +133,9 @@ export default function Gemini({ setReqLang }) {
           </form>
         </div>
       )}
+      {responseTextGen ? (
+        <div className="gemini-resp">{responseText}</div>
+      ) : null}
     </>
   );
 }
