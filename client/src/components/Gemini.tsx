@@ -1,14 +1,17 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import React, { useState } from "react";
-import { render } from "react-dom";
 import { Document, Page, pdfjs } from "react-pdf";
+import "../css/Gemini.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Gemini() {
   const [docUploaded, setDocUploaded] = useState(false);
   const [pdfFile, setPdfFile] = useState(new Uint8Array());
+  const [responseText, setResponseText] = useState("");
+  const [responseTextGen, setResponseTextGen] = useState(false);
 
   async function queryGemini(data: string) {
+    setDocUploaded(false)
     const apiKey = import.meta.env.VITE_GEMINI_API;
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
@@ -20,7 +23,10 @@ export default function Gemini() {
     // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    console.log(response.text());
+    // console.log(response.text());
+    setResponseText(response.text());
+    console.log(responseText);
+    setResponseTextGen(true);
     console.log("Completed");
   }
 
@@ -48,10 +54,34 @@ export default function Gemini() {
     // await queryGemini(data)
   }
 
+  async function handleDrop(event: React.DragEvent) {
+    console.log("file dropped");
+    event.preventDefault();
+    if (event.dataTransfer.items) {
+        if (event.dataTransfer.items[0].kind === "file") {
+          const file = event.dataTransfer.items[0].getAsFile();
+          console.log(`file[0].name = ${file?.name}`);
+        }
+      };
+    }
+  }
+
+  async function handleDragOver(event: React.DragEvent) {
+    console.log("File in the drop zone");
+    event.preventDefault();
+  }
+
   return (
     <>
+      <div 
+        id="drop_zone" 
+        onDrop={(handleDrop)} 
+        onDragOver={handleDragOver} 
+        style={{ border: "2px dashed #aaa", padding: "20px", borderRadius: "1rem" }}>
+        <p>Drag and drop your resume as a .pdf or .txt</p>
+      </div>
       <form onSubmit={parseData}>
-        <label htmlFor="resume-submit">Upload your resume:</label>
+        <label htmlFor="resume-submit">or upload your resume: </label>
         <input
           type="file"
           className="resume-submit"
@@ -77,6 +107,10 @@ export default function Gemini() {
             />
           </Document>
         </>
+      ) : null}
+
+      {responseTextGen ? (
+        <div className="gemini-resp">{responseText}</div>
       ) : null}
     </>
   );
