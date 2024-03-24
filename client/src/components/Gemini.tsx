@@ -58,8 +58,23 @@ export default function Gemini() {
     event.preventDefault();
     if (event.dataTransfer.items) {
         if (event.dataTransfer.items[0].kind === "file") {
-          const file = event.dataTransfer.items[0].getAsFile();
-          console.log(`file[0].name = ${file?.name}`);
+          const file = event.dataTransfer.items[0].getAsFile()
+          if(!file) {
+            alert("Please select a file to upload")
+            return
+          }
+          console.log(`file[0].name = ${file?.name}`)
+          if (file?.type == "text/plain") {
+            const data = await file.text();
+            console.log(data);
+            await queryGemini(data);
+          } else {
+            const buf = await file.arrayBuffer();
+            const data = new Uint8Array(buf);
+            setPdfFile(data);
+            setDocUploaded(true);
+            //await queryGemini(file, false)
+          }
         }
       };
   }
