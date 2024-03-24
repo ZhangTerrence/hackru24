@@ -31,7 +31,9 @@ export default function Gemini({ setReqLang }) {
     const length = position[position.length - 1];
     console.log(length);
 
-    const array = length.split("*");
+    const array = length.split(/[*,;-]/).map((e) => e.trim());
+    array[0].substring(1, array[0].length - 1);
+
     console.log(array);
     setReqLang(array);
 

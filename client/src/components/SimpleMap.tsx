@@ -12,7 +12,7 @@ const SimpleMap = ({
   latitude: number;
   longitude: number;
   data: Test[];
-  queryString: Test[];
+  queryString: string[];
 }) => {
   const mapRef = useRef(null);
 
@@ -22,7 +22,7 @@ const SimpleMap = ({
       center={[latitude, longitude]}
       zoom={8}
       ref={mapRef}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "100%", width: "100%", borderRadius: "2rem" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -34,7 +34,7 @@ const SimpleMap = ({
       </Marker>
 
       {data.map((item) => {
-        if (item) {
+        if (item && queryString.some((skill) => item.skills.includes(skill))) {
           return (
             <Marker position={[item.location[0], item.location[1]]}>
               <Popup>
