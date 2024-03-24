@@ -26,6 +26,7 @@ export default function Gemini() {
 
   async function parseData(event: React.FormEvent) {
     event.preventDefault();
+    setDocUploaded(false);
     const file = (document.getElementById("res-sub") as HTMLInputElement)
       .files?.[0];
     console.log(file);
@@ -68,8 +69,8 @@ export default function Gemini() {
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
                 // console.log(page.getTextContent())
-                var textObj = await page.getTextContent();
-                var text = textObj.items.map((s) => s.str).join("");
+                const textObj = await page.getTextContent();
+                const text = textObj.items.map((s) => s.str).join("");
                 // console.log(text)
                 await queryGemini(text);
               }}
