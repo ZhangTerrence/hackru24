@@ -16,14 +16,9 @@ export default function Gemini() {
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
 
-    // console.log(data)
-    // console.log(apiKey)
-
     const prompt = "Please review my resume for me: " + data;
-    // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    // console.log(response.text());
     setResponseText(response.text());
     console.log(responseText);
     setResponseTextGen(true);
@@ -47,10 +42,8 @@ export default function Gemini() {
       const buf = await file.arrayBuffer();
       const data = new Uint8Array(buf);
       setPdfFile(data);
-      setDocUploaded(true);
-      //await queryGemini(file, false)
+      setDocUploaded(true); //await queryGemini(file, false)
     }
-    // await queryGemini(data)
   }
 
   async function handleDrop(event: React.DragEvent) {
@@ -86,11 +79,16 @@ export default function Gemini() {
 
   return (
     <>
-      <div 
-        id="drop_zone" 
-        onDrop={(handleDrop)} 
-        onDragOver={handleDragOver} 
-        style={{ border: "2px dashed #aaa", padding: "20px", borderRadius: "1rem" }}>
+      <div
+        id="drop_zone"
+        onDrop={handleDrop}
+        onDragOver={handleDragOver}
+        style={{
+          border: "2px dashed #aaa",
+          padding: "20px",
+          borderRadius: "1rem",
+        }}
+      >
         <p>Drag and drop your resume as a .pdf or .txt</p>
       </div>
       <form onSubmit={parseData}>
@@ -111,10 +109,10 @@ export default function Gemini() {
               pageNumber={1}
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
-                // console.log(page.getTextContent())
+
                 const textObj = await page.getTextContent();
                 const text = textObj.items.map((s) => s.str).join("");
-                // console.log(text)
+
                 await queryGemini(text);
               }}
             />

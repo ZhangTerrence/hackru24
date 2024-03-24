@@ -22,10 +22,6 @@ export const Home = () => {
     const getData = async () => {
       setKey(import.meta.env.VITE_GOOGLE_API);
 
-      // const test = await fromAddress("Eiffel Tower");
-      // const res = test.results[0].geometry.location;
-      // console.log([res.lat, res.lng]);
-
       const newData = myData.info;
 
       const test = await Promise.all(
@@ -44,7 +40,6 @@ export const Home = () => {
           }
         })
       );
-      console.log(test);
       setUserData(test);
     };
     getData();
@@ -75,7 +70,7 @@ export const Home = () => {
     <>
       <section className="home">
         <nav className="nav">
-          <div className="logo">HackRU</div>
+          <div className="logo">Kairos</div>
           <ul className="nav-list">
             <a href="https://hackru-spring-2024.devpost.com/">
               <li className="nav-list-item">Devpost</li>
@@ -88,7 +83,7 @@ export const Home = () => {
             <div className="l-text-container">
               <div className="l-main-text">Resume Review</div>
               <div className="l-sub-text">
-                Improve your resume using our AI-powered assistant
+                Improve your resume using our AI-powered assistant.
               </div>
               <Upload />
             </div>
