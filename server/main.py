@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+import json
 from scraper import run_scraper
 
 app = Flask(__name__)
@@ -6,6 +7,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    info = run_scraper()
+    data = run_scraper()
 
-    return jsonify({"data": info})
+    with open("./data.json", "w+") as file:
+        json.dump(data, file)
+
+    return jsonify({"success": True})

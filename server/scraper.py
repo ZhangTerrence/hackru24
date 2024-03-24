@@ -27,7 +27,7 @@ def run_scraper():
     driver = webdriver.Firefox(options=options)
     driver.get(url)
 
-    info = []
+    data = {"info": []}
 
     tds = driver.find_elements(By.TAG_NAME, "td")
     for td in tds:
@@ -48,6 +48,8 @@ def run_scraper():
                 for listElement in listElements:
                     [skills.add(s) for s in LANGUAGES if s in listElement.text]
 
-                info.append((title, location, list(skills)))
+                data["info"].append(
+                    {"title": title, "location": location, "skills": list(skills)}
+                )
 
-    return info
+    return data
