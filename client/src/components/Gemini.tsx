@@ -1,6 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import React, { useState } from "react";
-import { render } from "react-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -14,14 +13,9 @@ export default function Gemini() {
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
 
-    // console.log(data)
-    // console.log(apiKey)
-
     const prompt = "Please review my resume for me: " + data;
-    // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    // console.log(response.text());
     setResponseText(response.text());
     console.log(responseText);
     console.log("Completed");
@@ -44,24 +38,22 @@ export default function Gemini() {
       const buf = await file.arrayBuffer();
       const data = new Uint8Array(buf);
       setPdfFile(data);
-      setDocUploaded(true);
-      //await queryGemini(file, false)
+      setDocUploaded(true); //await queryGemini(file, false)
     }
-    // await queryGemini(data)
   }
 
   async function handleDrop(event: React.DragEvent) {
     console.log("file dropped");
     event.preventDefault();
     if (event.dataTransfer.items) {
-      [...event.dataTransfer.items].forEach((item,i) => {
+      [...event.dataTransfer.items].forEach((item, i) => {
         if (item.kind === "file") {
           const file = item.getAsFile();
-          console.log(`file[${i}].name = ${file.name}`);
+          console.log(`file[${i}].name = ${file?.name ?? ""}`);
         }
       });
     } else {
-      [...event.dataTransfer.files].forEach((file,i) => {
+      [...event.dataTransfer.files].forEach((file, i) => {
         console.log(`file[${i}].name = ${file.name}`);
       });
     }
@@ -74,11 +66,16 @@ export default function Gemini() {
 
   return (
     <>
-      <div 
-        id="drop_zone" 
-        onDrop={(handleDrop)} 
-        onDragOver={handleDragOver} 
-        style={{ border: "2px dashed #aaa", padding: "20px", borderRadius: "1rem" }}>
+      <div
+        id="drop_zone"
+        onDrop={handleDrop}
+        onDragOver={handleDragOver}
+        style={{
+          border: "2px dashed #aaa",
+          padding: "20px",
+          borderRadius: "1rem",
+        }}
+      >
         <p>Drag and drop your resume as a .pdf or .txt</p>
       </div>
       <form onSubmit={parseData}>
@@ -99,15 +96,13 @@ export default function Gemini() {
               pageNumber={1}
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
-                // console.log(page.getTextContent())
-                var textObj = await page.getTextContent();
-                var text = textObj.items.map((s) => s.str).join("");
-                // console.log(text)
+                const textObj = await page.getTextContent();
+                const text = textObj.items.map((s) => s.str).join("");
                 await queryGemini(text);
               }}
             />
           </Document>
-          {{responseText}}
+          {{ responseText }}
         </>
       ) : null}
     </>
