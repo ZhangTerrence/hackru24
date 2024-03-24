@@ -1,0 +1,1844 @@
+{
+  "info": [
+    {
+      "title": "Software Engineering Intern",
+      "location": "Morrisville, NC, USA",
+      "skills": [".NET", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Morrisville, NC, USA",
+      "skills": [".NET", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Development Engineer in Test Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": [
+        "Microsoft Azure",
+        "Docker",
+        "SQL",
+        "Postgres",
+        "AWS",
+        "Kubernetes",
+        "Git"
+      ]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["DevOps", "Docker", "SQL", "AWS", "Linux", "Kubernetes", "Git"]
+    },
+    {
+      "title": "Software Intern",
+      "location": "Allen, TX, USA",
+      "skills": ["Docker", "SQL", "AWS", "Linux", "REST APIs", "Kubernetes"]
+    },
+    {
+      "title": "Intern Software Engineer",
+      "location": "Pleasanton, CA, USA",
+      "skills": ["HTML", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Intern Software Engineer",
+      "location": "Kansas City, MO, USA",
+      "skills": ["HTML", "CSS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "2024 Summer Intern",
+      "location": "Mountain View, CA, USA",
+      "skills": [
+        "AWS",
+        "Java",
+        "REST APIs",
+        "CSS",
+        "Docker",
+        "SQL",
+        "React.js",
+        "HTML",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Omaha, NE, USA",
+      "skills": ["DevOps", "SQL", "MySQL", "HTML", "Java", "CSS", "Git"]
+    },
+    {
+      "title": "Cloud Software Developer Intern",
+      "location": "Spring, TX, USA \u2022 Boise, ID, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["DevOps"]
+    },
+    {
+      "title": "Intern \u2013 Data Science and Data Strategy",
+      "location": "Los Angeles, CA, USA",
+      "skills": ["Django", "Python", "SQL", "MySQL"]
+    },
+    {
+      "title": "Site Reliability Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["Linux", "Perl", "Data Structures & Algorithms", "DevOps"]
+    },
+    {
+      "title": "Intern \u2013 Storage Software Engineer",
+      "location": "San Jose, CA, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Research Scientist Intern",
+      "location": "Remote in USA",
+      "skills": [
+        "Python",
+        "MATLAB",
+        "Data Structures & Algorithms",
+        "Linux",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "Hardware Engineering Intern",
+      "location": "Folsom, CA, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Firmware Engineering Intern",
+      "location": "San Bruno, CA, USA",
+      "skills": ["C", "Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Summer 2024 Software Engineering Intern",
+      "location": "Longmont, CO, USA",
+      "skills": ["C++", "Python"]
+    },
+    {
+      "title": "Technology Intern",
+      "location": "Remote in USA",
+      "skills": ["Go"]
+    },
+    {
+      "title": "IT \u2013 Data Analyst Intern-Summer 2024",
+      "location": "Attleboro, MA, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Remote",
+      "skills": ["AWS", "Kubernetes", "Git"]
+    },
+    {
+      "title": "Intern Software Engineer",
+      "location": "Remote",
+      "skills": ["AWS", "Kubernetes", "Postgres", "GraphQL"]
+    },
+    {
+      "title": "Associate Data Scientist \u2013 Intern",
+      "location": "Ashburn, VA, USA",
+      "skills": ["HTML", "SQL", "CSS"]
+    },
+    {
+      "title": "Finance Data Analyst Intern",
+      "location": "New York, NY, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "2024 Software Developer \u2013 Sophomore Summer Internship",
+      "location": "Remote in USA",
+      "skills": ["DevOps", "Docker", "AWS", "Kubernetes", "Git"]
+    },
+    {
+      "title": "2024 Software Developer \u2013 Sophomore Summer Internship",
+      "location": "Remote in USA",
+      "skills": ["AWS", "Java", "SQL", "Git"]
+    },
+    {
+      "title": "Software Test Engineer \u2013 Intern",
+      "location": "Austin, TX, USA",
+      "skills": ["Docker", "SQL", "Kubernetes", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Wireless Software Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["C", "Python"]
+    },
+    {
+      "title": "2024 Software Developer \u2013 Sophomore Summer Internship",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "Security Research Intern",
+      "location": "Remote in USA",
+      "skills": [
+        "Python",
+        "SQL",
+        "Postgres",
+        "MySQL",
+        "AWS",
+        "Linux",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "AI Software Engineering Undergraduate Intern",
+      "location": "Remote in USA",
+      "skills": ["Pandas", "SQL"]
+    },
+    {
+      "title": "Intern \u2013 Software Engineering",
+      "location": "San Jose, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Analyst Intern",
+      "location": "Remote in USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Data Analytics Intern",
+      "location": "San Carlos, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Systems and Analytics Intern",
+      "location": "North Bethesda, MD, USA \u2022 San Carlos, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Remote",
+      "skills": ["Java", "Kubernetes", "MongoDB"]
+    },
+    {
+      "title": "Summer \u2013 SQA Test Automation Engineer Intern: May to August 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["Linux", "REST APIs"]
+    },
+    {
+      "title": "Data Engineering Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Engineering Intern",
+      "location": "Los Angeles, CA, USA \u2022 Remote in USA \u2022 Phoenix, AZ, USA",
+      "skills": ["AWS", "Python"]
+    },
+    {
+      "title": "2024 PS Software Development Engineer Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["AWS", "jQuery", "HTML"]
+    },
+    {
+      "title": "Program Manager Intern",
+      "location": "Arlington, VA, USA",
+      "skills": ["Linux", "SQL"]
+    },
+    {
+      "title": "Strategy & Analytics Intern",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "2024 Engineering Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["Java", "Spring Boot", "SQL"]
+    },
+    {
+      "title": "Software Engineer Security Co-Op",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Austin, TX, USA",
+      "skills": ["HTML", "Docker", "Kubernetes", ".NET"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Bellevue, WA, USA",
+      "skills": ["HTML", "Docker", "Kubernetes", ".NET"]
+    },
+    {
+      "title": "Undergraduate Engineering Internship",
+      "location": "Seattle, WA, USA",
+      "skills": ["C#"]
+    },
+    {
+      "title": "AI \u2013 Data Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Highlands Ranch, CO, USA",
+      "skills": ["HTML", "Docker", "Kubernetes", ".NET"]
+    },
+    {
+      "title": "Summer Intern",
+      "location": "Madison, WI, USA \u2022 Pasadena, CA, USA \u2022 San Diego, CA, USA",
+      "skills": ["HTML", "CSS"]
+    },
+    {
+      "title": "2024 Security Software Engineer Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["AWS", "REST APIs"]
+    },
+    {
+      "title": "Product Applications Engineer \u2013 Internship",
+      "location": "Vancouver, BC, Canada",
+      "skills": ["C", "Linux", "Python"]
+    },
+    {
+      "title": "Customer Experience-Systems and Analytics Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Energy Analyst Intern",
+      "location": "Boulder, CO, USA",
+      "skills": ["R"]
+    },
+    {
+      "title": "Intern \u2013 Runtime Software Engineer",
+      "location": "Fremont, CA, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["AWS", "GraphQL", "SQL", "React.js"]
+    },
+    {
+      "title": "Data Engineer Intern",
+      "location": "New York, NY, USA",
+      "skills": ["Docker", "SQL", "Kubernetes"]
+    },
+    {
+      "title": "Computer Vision Software Intern",
+      "location": "San Bruno, CA, USA",
+      "skills": [
+        "Python",
+        "Data Structures & Algorithms",
+        "Linux",
+        "C++",
+        "Git"
+      ]
+    },
+    {
+      "title": "2024 Software Engineering \u2013 Summer Internship",
+      "location": "New York, NY, USA",
+      "skills": ["SQL", "HTML", "React.js", "AWS", "Kubernetes", "CSS", "Git"]
+    },
+    {
+      "title": "Data Science Intern",
+      "location": "San Jose, CA, USA",
+      "skills": ["Python", "SQL", "R"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Machine Learning Operations Intern",
+      "location": "San Jose, CA, USA",
+      "skills": ["AWS", "Docker", "SQL", "Python"]
+    },
+    {
+      "title": "Intern \u2013 Federal Data Science",
+      "location": "Reston, VA, USA",
+      "skills": []
+    },
+    {
+      "title": "Artificial Intelligence Engineering Intern",
+      "location": "Vancouver, WA, USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Data Engineer Co-Op",
+      "location": "Framingham, MA, USA",
+      "skills": ["AWS", "SQL"]
+    },
+    {
+      "title": "Software Engineer Intern-Remotes",
+      "location": "Remote in USA",
+      "skills": ["Python", "Git"]
+    },
+    {
+      "title": "Machine Learning Operations Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["AWS", "Docker", "SQL", "Python"]
+    },
+    {
+      "title": "Intern \u2013 Runtime Software Engineer",
+      "location": "Santa Clara, CA, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Intern \u2013 Robotics Engineer",
+      "location": "Fremont, CA, USA \u2022 Mountain View, CA, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Data Analytics Intern",
+      "location": "Albuquerque, NM, USA",
+      "skills": ["Python", "SQL"]
+    },
+    {
+      "title": "2024 Product Management \u2013 Advanced Insights & Analytics Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["Python", "SQL", "R"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Software Intern",
+      "location": "Austin, TX, USA \u2022 Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "Cyber Engineering Intern",
+      "location": "Bedford, IN, USA",
+      "skills": ["Linux", "Python", "Git"]
+    },
+    {
+      "title": "Backend Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["AWS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Summer Intern",
+      "location": "San Diego, CA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "UIUC Research Park Intern",
+      "location": "Urbana, IL, USA",
+      "skills": ["C", "Linux", "Python"]
+    },
+    {
+      "title": "Data Engineering Summer Intern",
+      "location": "Remote in USA",
+      "skills": ["AWS", "SQL"]
+    },
+    {
+      "title": "Intern \u2013 SSD System Design Engineer",
+      "location": "Longmont, CO, USA",
+      "skills": ["C"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Austin, TX, USA",
+      "skills": ["Git"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Austin, TX, USA \u2022 San Jose, CA, USA",
+      "skills": ["Git"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["Rust", "GraphQL", "React.js"]
+    },
+    {
+      "title": "Embedded Software Engineering Intern / Co-op",
+      "location": "Framingham, MA, USA",
+      "skills": ["Python"]
+    },
+    {
+      "title": "Production Development \u2013 Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["SQL", "GraphQL"]
+    },
+    {
+      "title": "Intern Software Engineer",
+      "location": "Remote in USA",
+      "skills": ["Docker", "Postgres", "GraphQL", "AWS", "Go", "Kubernetes"]
+    },
+    {
+      "title": "Data Science Intern",
+      "location": "New York, NY, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Soc Debug Engineer \u2013 Undergraduate Intern",
+      "location": "Marlborough, MA, USA \u2022 Santa Clara, CA, USA \u2022 Phoenix, AZ, USA",
+      "skills": []
+    },
+    {
+      "title": "Loads & Dynamics Engineer Intern",
+      "location": "Mountain View, CA, USA",
+      "skills": ["MATLAB"]
+    },
+    {
+      "title": "Summer \u2013 App Developer Test Engineer Intern: May to August 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["AWS", "REST APIs", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Data Management Intern",
+      "location": "Orange, CA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Software Engineering Co-Op",
+      "location": "Cambridge, MA, USA",
+      "skills": ["AWS", ".NET"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Quant Analyst Internship Summer 2025",
+      "location": "Cambridge, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Fall \u2013 Service Desk Co-op: June to December 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["Microsoft Azure"]
+    },
+    {
+      "title": "IOS or Android Mobile Application Engineer Co-op",
+      "location": "Framingham, MA, USA",
+      "skills": ["Swift", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Developer \u2013 Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["Python"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["Java", "SQL", "MySQL"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Mountain View, CA, USA",
+      "skills": ["HTML", "C++", "CSS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Site Analytics Intern",
+      "location": "Chicago, IL, USA",
+      "skills": []
+    },
+    {
+      "title": "Digital Success Intern",
+      "location": "Washington, DC, USA \u2022 San Francisco, CA, USA \u2022 Chicago, IL, USA \u2022 Bellevue...",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Boulder, CO, USA",
+      "skills": ["React.js"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Remote in USA",
+      "skills": ["Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Business Intelligence Intern",
+      "location": "Englewood, NJ, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Information Security Engineer \u2013 Undergraduate Intern",
+      "location": "Santa Clara, CA, USA \u2022 Hillsboro, OR, USA \u2022 Folsom, CA, USA \u2022 Phoenix, AZ...",
+      "skills": ["Linux", "NoSQL", "SQL", "MySQL"]
+    },
+    {
+      "title": "Modeling and Simulation \u2013 Cloud Engineering Internship",
+      "location": "Fairfax, VA, USA \u2022 McLean, VA, USA",
+      "skills": ["Microsoft Azure", "Python", "SQL", "AWS"]
+    },
+    {
+      "title": "Software Engineering Co-op",
+      "location": "Cambridge, MA, USA",
+      "skills": ["HTML", ".NET", "SQL", "CSS"]
+    },
+    {
+      "title": "Engineering Intern",
+      "location": "Normal, IL, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Digital Analytics Intern",
+      "location": "San Diego, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "QA Engineering Intern",
+      "location": "New York, NY, USA",
+      "skills": []
+    },
+    {
+      "title": "Unity Engineer Internship",
+      "location": "Remote in USA",
+      "skills": ["C#"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Seattle, WA, USA \u2022 San Francisco, CA, USA \u2022 Little Rock, AR...",
+      "skills": ["AWS", "Kubernetes", "SQL"]
+    },
+    {
+      "title": "Internship: Digital Twins",
+      "location": "Mountain View, CA, USA",
+      "skills": ["Go"]
+    },
+    {
+      "title": "Marketing Analytics Intern",
+      "location": "Austin, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "Intern \u2013 Tasking & Scheduling Software Engineer",
+      "location": "San Francisco, CA, USA",
+      "skills": ["Python", "MATLAB", "Git"]
+    },
+    {
+      "title": "Software Development/Engineering Intern",
+      "location": "Hampton, VA, USA \u2022 Omaha, NE, USA",
+      "skills": [
+        "Microsoft Azure",
+        "Linux",
+        "Docker",
+        "Java",
+        "Kubernetes",
+        "Git"
+      ]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Broomfield, CO, USA",
+      "skills": ["Git"]
+    },
+    {
+      "title": "RAMP Engineering Co-Op Program",
+      "location": "Rochester, MN, USA",
+      "skills": []
+    },
+    {
+      "title": "Quality Engineer Intern",
+      "location": "Richmond, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Analyst Internship",
+      "location": "Atlanta, GA, USA",
+      "skills": [
+        "Microsoft Azure",
+        "Next.js",
+        "SQL",
+        "HTML",
+        "AWS",
+        "CSS",
+        "Git"
+      ]
+    },
+    {
+      "title": "Data Analyst Internship",
+      "location": "Atlanta, GA, USA",
+      "skills": ["Microsoft Azure", "SQL", "HTML", "AWS", "Git"]
+    },
+    {
+      "title": "Data Analytics Internship",
+      "location": "Burlington, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Internship",
+      "location": "San Carlos, CA, USA",
+      "skills": ["Swift", "Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Software Engineering Internship",
+      "location": "Remote in USA",
+      "skills": ["Typescript", "Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["SQL", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "AI Engineering / Data Science Intern",
+      "location": "Orem, UT, USA",
+      "skills": ["AWS", "SQL", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Supply Chain \u2013 And Operations Co-op",
+      "location": "Cambridge, MA, USA",
+      "skills": ["Python", "SQL"]
+    },
+    {
+      "title": "AI Data \u2013 Summer Internship",
+      "location": "Waltham, MA, USA",
+      "skills": ["Microsoft Azure", "Python", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Internship",
+      "location": "Milpitas, CA, USA",
+      "skills": ["Java", "Python"]
+    },
+    {
+      "title": "Internship: Robotic Skills",
+      "location": "Mountain View, CA, USA",
+      "skills": ["C++"]
+    },
+    {
+      "title": "Engineering Program Manager Intern",
+      "location": "London, UK \u2022 Remote in USA \u2022 Remote",
+      "skills": []
+    },
+    {
+      "title": "Dutch Content Quality internship",
+      "location": "Remote",
+      "skills": []
+    },
+    {
+      "title": "Automotive SOC Product Architecture Intern",
+      "location": "Santa Clara, CA, USA",
+      "skills": ["C++"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Chicago, IL, USA",
+      "skills": ["Typescript", "Vue.js", "GraphQL"]
+    },
+    {
+      "title": "Demand Planning Intern",
+      "location": "Palo Alto, CA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "2024 Summer Print Software Engineer Intern",
+      "location": "Vancouver, WA, USA",
+      "skills": []
+    },
+    {
+      "title": "Device Engineer Intern",
+      "location": "Vienna, VA, USA",
+      "skills": [".NET", "Linux", "SQL"]
+    },
+    {
+      "title": "Software Engineer Internship",
+      "location": "Lawrence, KS, USA",
+      "skills": [".NET", "SQL"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Seattle, WA, USA \u2022 San Carlos, CA, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "location": "Seattle, WA, USA \u2022 San Carlos, CA, USA",
+      "skills": ["Kubernetes"]
+    },
+    {
+      "title": "Intern \u2013 Data Analytics",
+      "location": "New York, NY, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Intern Software",
+      "location": "Remote in USA",
+      "skills": ["C++", "Python"]
+    },
+    {
+      "title": "Planning Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["Linux", "C++", "Python"]
+    },
+    {
+      "title": "Data Science/Machine Learning Engineer Intern",
+      "location": "San Diego, CA, USA",
+      "skills": ["DevOps", "Python", "Docker", ".NET", "Kubernetes", "AWS"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Indianapolis, IN, USA",
+      "skills": [
+        "Microsoft Azure",
+        "DevOps",
+        "Python",
+        "React.js",
+        "AWS",
+        ".NET",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "Forbes Summer 2024 Technology Internship",
+      "location": "New York, NY, USA",
+      "skills": ["DevOps", "React.js", "HTML", "AWS", "CSS"]
+    },
+    {
+      "title": "Quantitative Intern",
+      "location": "Ardmore, PA, USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Software Engineer Internship",
+      "location": "Vienna, VA, USA",
+      "skills": [".NET", "SQL"]
+    },
+    {
+      "title": "Data Science \u2013 Generative AI Intern Summer 2024",
+      "location": "Spring, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Systems Analytics Intern",
+      "location": "Fremont, CA, USA",
+      "skills": ["Git"]
+    },
+    {
+      "title": "Software Engineer internship",
+      "location": "Austin, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "2025 Point72 Academy Investment Analyst Summer Internship Program",
+      "location": "United States",
+      "skills": []
+    },
+    {
+      "title": "NVIDIA Summer 2024 Internships: Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": [
+        "Microsoft Azure",
+        "AWS",
+        "Linux",
+        "REST APIs",
+        "CSS",
+        "Git",
+        "Docker",
+        "MongoDB",
+        "Data Structures & Algorithms",
+        "HTML",
+        "React.js",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "NVIDIA Summer 2024 Internships: Hardware Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["Linux", "MATLAB"]
+    },
+    {
+      "title": "NVIDIA Summer 2024 Internships: Computer Architecture Intern",
+      "location": "Remote in USA",
+      "skills": ["Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Technical Program Manager Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "NVIDIA Summer 2024 Internships: System Software Intern",
+      "location": "Remote in USA",
+      "skills": ["Linux", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "NVIDIA Summer 2024 Internships: Artificial Intelligence Intern",
+      "location": "Remote in USA",
+      "skills": ["Linux", "Docker", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Cloud Platform Support Intern",
+      "location": "Mississauga, ON, Canada",
+      "skills": ["Docker", "AWS", "Linux", "Kubernetes", "Git"]
+    },
+    {
+      "title": "Software Engineer / Robotics internship",
+      "location": "Austin, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "Consultant Developer Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["HTML", "CSS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Intern \u2013 Co-Op",
+      "location": "Toronto, ON, Canada",
+      "skills": [
+        "AWS",
+        "REST APIs",
+        "CSS",
+        "Vue.js",
+        "Javascript",
+        "Data Structures & Algorithms",
+        "React.js",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Security / App Dev Intern",
+      "location": "Spring, TX, USA",
+      "skills": ["jQuery", "SQL", "Microsoft Azure"]
+    },
+    {
+      "title": "Data Engineering Summer Internship",
+      "location": "Vancouver, WA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Undergraduate Internship",
+      "location": "Austin, TX, USA \u2022 Albuquerque, NM, USA \u2022 Santa Clara, CA, USA \u2022 Hillsboro...",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Bastrop, TX, USA",
+      "skills": ["NoSQL", "SQL", "HTML", "Linux", "C++", "CSS", "Git"]
+    },
+    {
+      "title": "Algorithms Software Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["C++", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Developer \u2013 Internship",
+      "location": "Toronto, ON, Canada",
+      "skills": ["GraphQL", "SQL", "MySQL", "React.js"]
+    },
+    {
+      "title": "Summer 2024 Software Engineering Internship",
+      "location": "Remote in USA",
+      "skills": [
+        "Javascript",
+        "Python",
+        "Data Structures & Algorithms",
+        "React.js"
+      ]
+    },
+    {
+      "title": "2024 Infrastructure Engineering Summer Internship",
+      "location": "London, UK",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "location": "Mountain View, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "location": "Mountain View, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Robotics Software Engineer \u2013 Intern",
+      "location": "San Bruno, CA, USA",
+      "skills": ["Linux", "C++", "Python", "Git"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "San Carlos, CA, USA",
+      "skills": [
+        "MySQL",
+        "AWS",
+        "Java",
+        "REST APIs",
+        "CSS",
+        "SQL",
+        "React.js",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Austin, TX, USA",
+      "skills": [
+        "SQL",
+        "Postgres",
+        "MongoDB",
+        "Data Structures & Algorithms",
+        "Linux",
+        "C++",
+        "Git"
+      ]
+    },
+    {
+      "title": "Software Security Research Intern",
+      "location": "Bristol, UK",
+      "skills": ["DevOps", "Docker", "Linux", "Kubernetes", "Git"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Austin, TX, USA",
+      "skills": ["HTML", "SQL", "CSS"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Las Vegas, NV, USA",
+      "skills": [
+        "jQuery",
+        "TCP/IP",
+        "CSS",
+        "HTML",
+        "React.js",
+        "REST APIs",
+        "Vue.js"
+      ]
+    },
+    {
+      "title": "Intern \u2013 AI/ML Specialist",
+      "location": "San Jose, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Machine Learning Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Internship",
+      "location": "Overland Park, KS, USA",
+      "skills": ["Python", "SQL", "React.js", ".NET", "C++"]
+    },
+    {
+      "title": "Surgery Operations Engineer Intern",
+      "location": "Fremont, CA, USA",
+      "skills": []
+    },
+    { "title": "Data Science Internship", "location": "Remote", "skills": [] },
+    {
+      "title": "Data Science Internship",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "Backend Software Engineering Intern",
+      "location": "Palo Alto, CA, USA",
+      "skills": ["Git", "SQL", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Quantitative Research Analyst Internship",
+      "location": "Villanova, PA, USA",
+      "skills": ["C++"]
+    },
+    {
+      "title": "Data Engineering Intern Spring/Summer 2024",
+      "location": "Mountain View, CA, USA",
+      "skills": ["Django"]
+    },
+    {
+      "title": "2024 Core Operations Summer Internship",
+      "location": "Miami, FL, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "2024 Emerging Technology Summer Internship",
+      "location": "New York, NY, USA",
+      "skills": ["Kubernetes", "Docker"]
+    },
+    {
+      "title": "Data Scientist Intern",
+      "location": "United States",
+      "skills": ["AWS", "SQL"]
+    },
+    {
+      "title": "Junior Software Developer Internship",
+      "location": "Ashburn, VA, USA",
+      "skills": [
+        "MySQL",
+        "Java",
+        "Spring Boot",
+        "CSS",
+        "Git",
+        "DevOps",
+        "SQL",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Marketing Technical Analyst Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Summer Internship",
+      "location": "Reston, VA, USA",
+      "skills": []
+    },
+    {
+      "title": "Summer 2024 Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": [
+        "Docker",
+        "Python",
+        "Data Structures & Algorithms",
+        "Kubernetes",
+        "Spring Boot"
+      ]
+    },
+    {
+      "title": "AI/Autonomy Engineering Intern",
+      "location": "Hagerstown, MD, USA",
+      "skills": []
+    },
+    {
+      "title": "MBA 2024 Internships: Product Management",
+      "location": "Santa Clara, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "2024 Investments & Risk Technology Intern",
+      "location": "New York, NY, USA",
+      "skills": ["Linux", "Python", "SQL"]
+    },
+    {
+      "title": "Summer Intern",
+      "location": "Arlington, VA, USA",
+      "skills": []
+    },
+    {
+      "title": "Embedded System Engineer Intern",
+      "location": "San Jose, CA, USA",
+      "skills": ["Linux", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "San Francisco, CA, USA \u2022 New York, NY, USA",
+      "skills": ["C", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Analytics Summer Internship",
+      "location": "Cambridge, MA, USA \u2022 Dayton, OH, USA \u2022 Arlington, VA, USA \u2022 Melbourne, FL...",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Analytics Summer Internship",
+      "location": "Cambridge, MA, USA \u2022 Dayton, OH, USA \u2022 Arlington, VA, USA \u2022 Melbourne, FL...",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Labeling & Tools \u2013 Software Engineer Internship/Co-op",
+      "location": "San Mateo, CA, USA",
+      "skills": ["Python"]
+    },
+    {
+      "title": "Spring \u2013 Co-op: January to June 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Backend Java Developer Intern",
+      "location": "New York, NY, USA",
+      "skills": []
+    },
+    {
+      "title": "Mobile Software Engineering Intern",
+      "location": "Palo Alto, CA, USA",
+      "skills": ["Git"]
+    },
+    {
+      "title": "Android Software Engineering Internship",
+      "location": "Madison, WI, USA \u2022 Chicago, IL, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Systems Infrastructure \u2013 Software Engineering Internship/Co-Op",
+      "location": "San Mateo, CA, USA",
+      "skills": ["Linux", "Python"]
+    },
+    {
+      "title": "Hardware Test Internship/Co-op",
+      "location": "San Mateo, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Computer Science Internship",
+      "location": "Hyattsville, MD, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "2024 FP&a Intern",
+      "location": "Des Moines, IA, USA",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Pasadena, CA, USA",
+      "skills": [
+        "Docker",
+        "Data Structures & Algorithms",
+        "React.js",
+        "Linux",
+        "Vue.js"
+      ]
+    },
+    {
+      "title": "Summer Internship 2024",
+      "location": "Dulles, VA, USA",
+      "skills": ["AWS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Summer Internship 2024",
+      "location": "Remote in USA",
+      "skills": ["AWS"]
+    },
+    {
+      "title": "Research Intern RAL",
+      "location": "Sunnyvale, CA, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Needham, MA, USA",
+      "skills": ["C", "Python", "Java", "Data Structures & Algorithms", "Linux"]
+    },
+    {
+      "title": "Analytics Summer Internship",
+      "location": "Cambridge, MA, USA \u2022 Dayton, OH, USA \u2022 Arlington, VA, USA \u2022 Melbourne, FL...",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Engineering Intern for Cloud Identity",
+      "location": "Framingham, MA, USA",
+      "skills": ["NoSQL", "Docker", "SQL", "Java", "Kubernetes"]
+    },
+    {
+      "title": "Front-End Software Engineer Intern",
+      "location": "Orem, UT, USA",
+      "skills": ["HTML", "Javascript", "CSS"]
+    },
+    {
+      "title": "Summer 2024 Undergraduate Technical Internships",
+      "location": "Reston, VA, USA",
+      "skills": ["Linux", "Java"]
+    },
+    {
+      "title": "2024 Risk Analyst Summer Internship",
+      "location": "New York, NY, USA",
+      "skills": ["Python", "SQL"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "London, UK \u2022 Austin, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Durham, NC, USA \u2022 Columbus, OH, USA \u2022 Charlottesville, VA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Science Intern \u2013 Pey/Co-Op",
+      "location": "Montreal, QC, Canada \u2022 Toronto, ON, Canada",
+      "skills": ["AWS", "Python", "SQL", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Full-Stack Developer Intern-PEY/Co-Op",
+      "location": "Toronto, ON, Canada",
+      "skills": ["Python", "SQL"]
+    },
+    {
+      "title": "Full Stack Engineer Intern for Computer Vision Products",
+      "location": "Palo Alto, CA, USA",
+      "skills": ["React.js"]
+    },
+    {
+      "title": "Professional Services Software Engineering Internship",
+      "location": "Remote in USA",
+      "skills": [
+        "Javascript",
+        "Data Structures & Algorithms",
+        "React.js",
+        "HTML",
+        "Linux",
+        "CSS",
+        "Git"
+      ]
+    },
+    {
+      "title": "Developer Internship",
+      "location": "Villanova, PA, USA",
+      "skills": ["Linux", "SQL", "Java"]
+    },
+    {
+      "title": "Robotic Software Intern/Co-op",
+      "location": "Houston, TX, USA",
+      "skills": ["C++", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "2024 Summer Print Computer Science Intern",
+      "location": "Vancouver, WA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer Internship Summer 2024",
+      "location": "Chicago, IL, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Remote in USA",
+      "skills": []
+    },
+    {
+      "title": "Data Analyst Intern",
+      "location": "London, UK",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "San Mateo, CA, USA",
+      "skills": ["Linux", "SQL", "HTML", "AWS", "Java", "CSS", "Git"]
+    },
+    {
+      "title": "Intern \u2013 Information Technology",
+      "location": "Milwaukee, WI, USA",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Florida a&M University Summer Internship 2024",
+      "location": "Remote in USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Howard University Summer Internship 2024",
+      "location": "Portage, MI, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering Internship",
+      "location": "Cambridge, MA, USA",
+      "skills": ["HTML", "SQL", "CSS"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "San Carlos, CA, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering \u2013 Summer 2024 Internships",
+      "location": "Palo Alto, CA, USA",
+      "skills": ["DevOps", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Internship",
+      "location": "Remote",
+      "skills": ["C++"]
+    },
+    { "title": "Intern", "location": "Remote in USA", "skills": [] },
+    {
+      "title": "UIUC Research Park Intern",
+      "location": "Urbana, IL, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Quantitative Trader Intern",
+      "location": "Chicago, IL, USA",
+      "skills": ["Python"]
+    },
+    {
+      "title": "Software Engineer Internship",
+      "location": "New York, NY, USA",
+      "skills": ["AWS", "SQL"]
+    },
+    {
+      "title": "Undergrad Technical Intern",
+      "location": "Santa Clara, CA, USA \u2022 Hillsboro, OR, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "FPGA Software Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["Git", "Linux", "C++", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Web Developer Internship",
+      "location": "Harrisburg, PA, USA",
+      "skills": ["SQL", "MySQL"]
+    },
+    {
+      "title": "Research Internship/Co-op",
+      "location": "Toronto, ON, Canada \u2022 San Francisco, CA, USA",
+      "skills": ["Python", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Research Internship",
+      "location": "Seattle, WA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Development Intern",
+      "location": "Arlington, VA, USA",
+      "skills": ["jQuery", "PHP", "HTML", "CSS", "Git"]
+    },
+    {
+      "title": "Investment Analyst Intern",
+      "location": "Milwaukee, WI, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Fremont, CA, USA \u2022 Austin, TX, USA",
+      "skills": ["Django", "HTML", "CSS"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Austin, TX, USA",
+      "skills": ["Django", "HTML", "CSS"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Fremont, CA, USA",
+      "skills": ["C", "Linux"]
+    },
+    {
+      "title": "Embedded Software Engineer Intern",
+      "location": "Remote in USA",
+      "skills": ["TCP/IP", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Fullstack Engineering Coop",
+      "location": "Cambridge, MA, USA",
+      "skills": ["HTML", "CSS", "React.js"]
+    },
+    {
+      "title": "6 months Internship in Strategy & Data Science",
+      "location": "New York, NY, USA",
+      "skills": ["Python"]
+    },
+    {
+      "title": "Full-Stack Intern",
+      "location": "San Francisco, CA, USA \u2022 New York, NY, USA",
+      "skills": ["SQL", "Postgres", "React.js"]
+    },
+    { "title": "Research Intern", "location": "Remote in USA", "skills": [] },
+    {
+      "title": "Research Internship",
+      "location": "Seattle, WA, USA",
+      "skills": []
+    },
+    {
+      "title": "Computer Vision Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Kirkland, WA, USA",
+      "skills": ["C#"]
+    },
+    {
+      "title": "Software Engineer \u2013 Intern",
+      "location": "Pittsburgh, PA, USA",
+      "skills": ["Microsoft Azure", "Docker", "Kubernetes", "AWS"]
+    },
+    {
+      "title": "Computer Vision Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Development Engineer in Test Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": [
+        "Microsoft Azure",
+        "Docker",
+        "SQL",
+        "Postgres",
+        "AWS",
+        "Kubernetes",
+        "Git"
+      ]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": ["DevOps", "Docker", "SQL", "AWS", "Linux", "Kubernetes", "Git"]
+    },
+    {
+      "title": "Intern Software Engineer \u2013 Northeastern Co-op",
+      "location": "Cambridge, MA, USA",
+      "skills": ["HTML", "CSS", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Cyber Fall Co-op",
+      "location": "Cambridge, MA, USA \u2022 Dayton, OH, USA \u2022 Arlington, VA, USA \u2022 Melbourne, FL...",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Cyber Fall Co-op",
+      "location": "Burlington, MA, USA",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Systems Integration/Test Engineering Intern",
+      "location": "El Segundo, CA, USA",
+      "skills": ["Linux", "Python", "MATLAB"]
+    },
+    {
+      "title": "Data Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["C", "Docker", "SQL"]
+    },
+    {
+      "title": "Applied AI/ML Engineering Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": [
+        "Microsoft Azure",
+        "Python",
+        "Data Structures & Algorithms",
+        "AWS",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Summer \u2013 SQA Test Automation Engineer Intern: May to August 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["Linux", "REST APIs"]
+    },
+    {
+      "title": "Data Engineering Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Cambridge, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "2024 PS Software Development Engineer Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["AWS", "jQuery", "HTML"]
+    },
+    {
+      "title": "Sofware Engineering Intern",
+      "location": "Remote in USA",
+      "skills": ["C", "Docker", "React.js"]
+    },
+    {
+      "title": "Software Engineer Co-op",
+      "location": "New Orleans, LA, USA \u2022 New York, NY, USA",
+      "skills": ["AWS", "Javascript", "REST APIs"]
+    },
+    {
+      "title": "2024 Engineering Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["Java", "Spring Boot", "SQL"]
+    },
+    {
+      "title": "GTM Data Analytics Intern",
+      "location": "Remote in USA",
+      "skills": ["C", "Docker", "SQL", "Git"]
+    },
+    {
+      "title": "Product Analytics Intern",
+      "location": "Remote in USA",
+      "skills": ["C", "Docker", "SQL"]
+    },
+    {
+      "title": "2024 Security Software Engineer Intern",
+      "location": "San Ramon, CA, USA",
+      "skills": ["AWS", "REST APIs"]
+    },
+    {
+      "title": "Fall 2024 Software Engineering Internship/Co-op",
+      "location": "Austin, TX, USA \u2022 Irvine, CA, USA \u2022 Cape Canaveral, FL, USA \u2022 Brownsville...",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Customer Experience-Systems and Analytics Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["SQL"]
+    },
+    {
+      "title": "Computer Vision Software Intern",
+      "location": "San Bruno, CA, USA",
+      "skills": [
+        "Python",
+        "Data Structures & Algorithms",
+        "Linux",
+        "C++",
+        "Git"
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Long Beach, CA, USA",
+      "skills": ["R"]
+    },
+    {
+      "title": "Data Engineer Co-Op",
+      "location": "Framingham, MA, USA",
+      "skills": ["AWS", "SQL"]
+    },
+    {
+      "title": "UIUC Research Park Intern",
+      "location": "Urbana, IL, USA",
+      "skills": ["C", "Linux", "Python"]
+    },
+    {
+      "title": "Production Development \u2013 Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": ["SQL", "GraphQL"]
+    },
+    {
+      "title": "Soc Debug Engineer \u2013 Undergraduate Intern",
+      "location": "Marlborough, MA, USA \u2022 Santa Clara, CA, USA \u2022 Phoenix, AZ, USA",
+      "skills": []
+    },
+    {
+      "title": "Co-Op \u2013 SSD Firmware Development",
+      "location": "Rochester, MN, USA",
+      "skills": []
+    },
+    {
+      "title": "Summer \u2013 App Developer Test Engineer Intern: May to August 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["AWS", "REST APIs", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineering Co-Op",
+      "location": "Cambridge, MA, USA",
+      "skills": ["AWS", ".NET"]
+    },
+    {
+      "title": "Fall \u2013 Service Desk Co-op: June to December 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["Microsoft Azure"]
+    },
+    {
+      "title": "Research Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": [
+        "Javascript",
+        "TCP/IP",
+        "Data Structures & Algorithms",
+        "Rust",
+        "Git"
+      ]
+    },
+    {
+      "title": "Research Intern",
+      "location": "Remote in USA",
+      "skills": [
+        "Javascript",
+        "TCP/IP",
+        "Data Structures & Algorithms",
+        "Rust",
+        "Git"
+      ]
+    },
+    {
+      "title": "Research Intern",
+      "location": "San Francisco, CA, USA \u2022 Remote in USA",
+      "skills": ["Git", "Javascript", "TCP/IP", "Rust"]
+    },
+    {
+      "title": "Research Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["Git", "Javascript", "TCP/IP", "Rust"]
+    },
+    {
+      "title": "Research Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": [
+        "Javascript",
+        "TCP/IP",
+        "Data Structures & Algorithms",
+        "Rust",
+        "Git"
+      ]
+    },
+    {
+      "title": "Youth Apprentice",
+      "location": "Appleton, WI, USA",
+      "skills": []
+    },
+    {
+      "title": "RAMP Engineering Co-Op Program",
+      "location": "Rochester, MN, USA",
+      "skills": []
+    },
+    {
+      "title": "AI Engineering / Data Science Intern",
+      "location": "Orem, UT, USA",
+      "skills": ["AWS", "SQL", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Seattle, WA, USA \u2022 San Carlos, CA, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "location": "Seattle, WA, USA \u2022 San Carlos, CA, USA",
+      "skills": ["Kubernetes"]
+    },
+    {
+      "title": "Compiler Engineering PEY Intern",
+      "location": "Remote",
+      "skills": ["Linux"]
+    },
+    {
+      "title": "Intern \u2013 Software Engineer",
+      "location": "Neenah, WI, USA",
+      "skills": []
+    },
+    { "title": "Research Intern", "location": "Remote in USA", "skills": [] },
+    {
+      "title": "Test Enablement Engineer Co-op",
+      "location": "Remote",
+      "skills": [
+        "Docker",
+        "SQL",
+        "Data Structures & Algorithms",
+        "AWS",
+        "REST APIs"
+      ]
+    },
+    {
+      "title": "Personal Systems Artificial Intelligence Engineer Intern",
+      "location": "Palo Alto, CA, USA \u2022 Spring, TX, USA",
+      "skills": []
+    },
+    {
+      "title": "Fpga \u2013 Engineer Co-op",
+      "location": "Lexington, MA, USA",
+      "skills": []
+    },
+    {
+      "title": "Intern \u2013 Fall 2024",
+      "location": "Kent, WA, USA",
+      "skills": []
+    },
+    {
+      "title": "Robotics Software Engineer \u2013 Intern",
+      "location": "San Bruno, CA, USA",
+      "skills": ["Linux", "C++", "Python", "Git"]
+    },
+    {
+      "title": "Intern \u2013 Software Engineer",
+      "location": "Pontiac, MI, USA",
+      "skills": []
+    },
+    {
+      "title": "Technical Program Manager Intern",
+      "location": "San Francisco, CA, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Engineering Intern Spring/Summer 2024",
+      "location": "Mountain View, CA, USA",
+      "skills": ["Django"]
+    },
+    {
+      "title": "Spring \u2013 Co-op: January to June 2024",
+      "location": "Needham, MA, USA",
+      "skills": ["MATLAB", "Data Structures & Algorithms"]
+    },
+    {
+      "title": "Embedded Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["Linux", "Data Structures & Algorithms", "Git"]
+    },
+    {
+      "title": "Generative AI Intern",
+      "location": "San Mateo, CA, USA",
+      "skills": ["AWS", "Javascript"]
+    },
+    {
+      "title": "Android Software Engineering Internship",
+      "location": "Madison, WI, USA \u2022 Chicago, IL, USA",
+      "skills": []
+    },
+    {
+      "title": "Computer Science Internship",
+      "location": "Hyattsville, MD, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Intern \u2013 Software Engineer",
+      "location": "Raleigh, NC, USA",
+      "skills": []
+    },
+    {
+      "title": "Data Engineer Intern",
+      "location": "Remote in USA \u2022 New York, NY, USA",
+      "skills": ["AWS", "NoSQL", "SQL"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "location": "Toronto, ON, Canada",
+      "skills": ["DevOps", "Docker", "AWS", "Linux", "Kubernetes"]
+    },
+    {
+      "title": "Perception Intern",
+      "location": "Remote",
+      "skills": ["Linux", "C++", "Python"]
+    },
+    {
+      "title": "Data Engineer Intern",
+      "location": "Washington, DC, USA",
+      "skills": ["AWS", "NoSQL", "SQL"]
+    },
+    {
+      "title": "Software Developer Intern",
+      "location": "Remote",
+      "skills": ["HTML", "CSS"]
+    },
+    {
+      "title": "Software Developer Intern",
+      "location": "Vancouver, BC, Canada",
+      "skills": ["HTML", "CSS"]
+    },
+    {
+      "title": "UIUC Research Park Intern",
+      "location": "Urbana, IL, USA",
+      "skills": ["Data Structures & Algorithms"]
+    },
+    {
+      "title": "Machine Learning \u2013 AI Research Internship",
+      "location": "Remote in USA",
+      "skills": ["Python"]
+    }
+  ]
+}
