@@ -1,15 +1,17 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import React, { useState } from "react";
-import { render } from "react-dom";
 import { Document, Page, pdfjs } from "react-pdf";
+import "../css/Gemini.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Gemini() {
   const [docUploaded, setDocUploaded] = useState(false);
   const [pdfFile, setPdfFile] = useState(new Uint8Array());
   const [responseText, setResponseText] = useState("");
+  const [responseTextGen, setResponseTextGen] = useState(false);
 
   async function queryGemini(data: string) {
+    setDocUploaded(false)
     const apiKey = import.meta.env.VITE_GEMINI_API;
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
@@ -24,6 +26,7 @@ export default function Gemini() {
     // console.log(response.text());
     setResponseText(response.text());
     console.log(responseText);
+    setResponseTextGen(true);
     console.log("Completed");
   }
 
@@ -54,16 +57,11 @@ export default function Gemini() {
     console.log("file dropped");
     event.preventDefault();
     if (event.dataTransfer.items) {
-      [...event.dataTransfer.items].forEach((item,i) => {
-        if (item.kind === "file") {
-          const file = item.getAsFile();
-          console.log(`file[${i}].name = ${file.name}`);
+        if (event.dataTransfer.items[0].kind === "file") {
+          const file = event.dataTransfer.items[0].getAsFile();
+          console.log(`file[0].name = ${file?.name}`);
         }
-      });
-    } else {
-      [...event.dataTransfer.files].forEach((file,i) => {
-        console.log(`file[${i}].name = ${file.name}`);
-      });
+      };
     }
   }
 
@@ -100,15 +98,18 @@ export default function Gemini() {
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
                 // console.log(page.getTextContent())
-                var textObj = await page.getTextContent();
-                var text = textObj.items.map((s) => s.str).join("");
+                const textObj = await page.getTextContent();
+                const text = textObj.items.map((s) => s.str).join("");
                 // console.log(text)
                 await queryGemini(text);
               }}
             />
           </Document>
-          {{responseText}}
         </>
+      ) : null}
+
+      {responseTextGen ? (
+        <div className="gemini-resp">{responseText}</div>
       ) : null}
     </>
   );
