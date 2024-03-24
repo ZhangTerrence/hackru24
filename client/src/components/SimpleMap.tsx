@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { Test } from "../types";
+import type { Data } from "../types";
 
 const SimpleMap = ({
   latitude,
@@ -11,13 +11,12 @@ const SimpleMap = ({
 }: {
   latitude: number;
   longitude: number;
-  data: Test[];
+  data: Data[];
   queryString: string[];
 }) => {
   const mapRef = useRef(null);
 
   return (
-    // Make sure you set the height and width of the map container otherwise the map won't show
     <MapContainer
       center={[latitude, longitude]}
       zoom={8}
@@ -27,7 +26,7 @@ const SimpleMap = ({
       <TileLayer
         attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
-        maxZoom="20"
+        maxZoom={20}
       />
       <Marker position={[latitude, longitude]}>
         <Popup>Your Starting Location</Popup>
@@ -42,7 +41,7 @@ const SimpleMap = ({
                 <p>
                   <div style={{ textDecoration: "underline" }}>
                     Required Languages:
-                  </div>{" "}
+                  </div>
                   {item.skills.join(", ")}
                 </p>
                 <p>{queryString}</p>

@@ -1,18 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "../css/Home.css";
 import { useState, useEffect } from "react";
-
 import SimpleMap from "../components/SimpleMap";
 import myData from "../data.json";
 import { setKey, fromAddress } from "react-geocode";
-import { Test } from "../types";
+import type { Data } from "../types";
 import Gemini from "../components/Gemini";
 
 export const Home = () => {
   const [userLatitude, setUserLatitude] = useState(null);
   const [userLongitude, setUserLongitude] = useState(null);
-  const [userData, setUserData] = useState<Test[]>([]);
-  const [reqLang, setReqLang] = useState([]);
+  const [userData, setUserData] = useState<(Data | null)[]>([]);
+  const [reqLang, setReqLang] = useState<string[]>([]);
 
   const getCoord = async (location: any) => {
     const geo = await fromAddress(location);
@@ -26,7 +25,7 @@ export const Home = () => {
 
       const newData = myData.info;
 
-      const test = await Promise.all(
+      const data = await Promise.all(
         newData.map(async (item) => {
           if (item.location !== "Remote") {
             const res = await getCoord(item.location);
@@ -42,7 +41,7 @@ export const Home = () => {
           }
         })
       );
-      setUserData(test);
+      setUserData(data);
     };
     getData();
   }, []);
@@ -53,7 +52,6 @@ export const Home = () => {
     const longitude = position.coords.longitude;
     setUserLatitude(latitude);
     setUserLongitude(longitude);
-    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
   };
 
   const error = () => {

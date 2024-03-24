@@ -4,7 +4,11 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "../css/Gemini.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export default function Gemini({ setReqLang }) {
+export default function Gemini({
+  setReqLang,
+}: {
+  setReqLang: React.Dispatch<React.SetStateAction<string[]>>;
+}) {
   const [docUploaded, setDocUploaded] = useState(false);
   const [pdfFile, setPdfFile] = useState(new Uint8Array());
   const [responseText, setResponseText] = useState("");
@@ -16,9 +20,6 @@ export default function Gemini({ setReqLang }) {
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
 
-    // console.log(data)
-    // console.log(apiKey)
-
     const prompt =
       "You will be asked to review the following resume: " +
       data +
@@ -27,25 +28,19 @@ export default function Gemini({ setReqLang }) {
       Positives: Great Description
       Negatives: Bad Description
       Languages: Typescript, Python
-      `;
-    // const prompt = data
+      ;`;
     const result = await model.generateContent(prompt);
     const response = await result.response;
     setResponseText(response.text());
     const position = response.text().split(":");
     const length = position[position.length - 1];
-    console.log(length);
 
     const array = length.split(/[*,;-]/).map((e) => e.trim());
     array[0].substring(1, array[0].length - 1);
 
-    console.log(array);
     setReqLang(array);
 
-    console.log(responseText);
-
     setResponseTextGen(true);
-    console.log("Completed");
   }
 
   async function parseData(event: React.FormEvent) {
@@ -53,7 +48,6 @@ export default function Gemini({ setReqLang }) {
     setDocUploaded(false);
     const file = (document.getElementById("res-sub") as HTMLInputElement)
       .files?.[0];
-    console.log(file);
     if (!file) {
       alert("Please select a file to upload");
       return;
@@ -66,12 +60,11 @@ export default function Gemini({ setReqLang }) {
       const buf = await file.arrayBuffer();
       const data = new Uint8Array(buf);
       setPdfFile(data);
-      setDocUploaded(true); //await queryGemini(file, false)
+      setDocUploaded(true);
     }
   }
 
   async function handleDrop(event: React.DragEvent) {
-    console.log("file dropped");
     event.preventDefault();
     if (event.dataTransfer.items) {
       if (event.dataTransfer.items[0].kind === "file") {
@@ -83,21 +76,18 @@ export default function Gemini({ setReqLang }) {
         console.log(`file[0].name = ${file?.name}`);
         if (file?.type == "text/plain") {
           const data = await file.text();
-          console.log(data);
           await queryGemini(data);
         } else {
           const buf = await file.arrayBuffer();
           const data = new Uint8Array(buf);
           setPdfFile(data);
           setDocUploaded(true);
-          //await queryGemini(file, false)
         }
       }
     }
   }
 
   async function handleDragOver(event: React.DragEvent) {
-    console.log("File in the drop zone");
     event.preventDefault();
   }
 
@@ -109,10 +99,8 @@ export default function Gemini({ setReqLang }) {
             <Page
               pageNumber={1}
               onLoadSuccess={async (page) => {
-                console.log("SUCCESS LOAD");
-
                 const textObj = await page.getTextContent();
-                const text = textObj.items.map((s) => s.str).join("");
+                const text = textObj.items.map((item) => item + "").join("");
                 await queryGemini(text);
               }}
             />
