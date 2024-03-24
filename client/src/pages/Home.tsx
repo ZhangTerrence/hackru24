@@ -12,7 +12,7 @@ export const Home = () => {
   const [userLatitude, setUserLatitude] = useState(null);
   const [userLongitude, setUserLongitude] = useState(null);
   const [userData, setUserData] = useState<Test[]>([]);
-  const [reqLang, setReqLang] = useState("");
+  const [reqLang, setReqLang] = useState([]);
 
   const getCoord = async (location: any) => {
     const geo = await fromAddress(location);
@@ -96,6 +96,7 @@ export const Home = () => {
                 latitude={userLatitude}
                 longitude={userLongitude}
                 data={userData}
+                queryString={reqLang}
               />
             ) : (
               <div className="r-text-container">

@@ -7,10 +7,12 @@ const SimpleMap = ({
   latitude,
   longitude,
   data,
+  queryString,
 }: {
   latitude: number;
   longitude: number;
   data: Test[];
+  queryString: Test[];
 }) => {
   const mapRef = useRef(null);
 
@@ -30,6 +32,7 @@ const SimpleMap = ({
       <Marker position={[latitude, longitude]}>
         <Popup>Your Starting Location</Popup>
       </Marker>
+
       {data.map((item) => {
         if (item) {
           return (
@@ -42,6 +45,7 @@ const SimpleMap = ({
                   </div>{" "}
                   {item.skills.join(", ")}
                 </p>
+                <p>{queryString}</p>
               </Popup>
             </Marker>
           );

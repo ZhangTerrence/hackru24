@@ -22,7 +22,7 @@ export default function Gemini({ setReqLang }) {
     const prompt =
       "Please review my resume for me: " +
       data +
-      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{List Languages}. ";
+      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{Language, Language, Language}. ";
     // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
@@ -31,13 +31,19 @@ export default function Gemini({ setReqLang }) {
     const length = position[position.length - 1];
     console.log(length);
 
+    const array = length.split("*");
+    console.log(array);
+    setReqLang(array);
+
     console.log(responseText);
+
     setResponseTextGen(true);
     console.log("Completed");
   }
 
   async function parseData(event: React.FormEvent) {
     event.preventDefault();
+    setDocUploaded(false);
     const file = (document.getElementById("res-sub") as HTMLInputElement)
       .files?.[0];
     console.log(file);
@@ -100,7 +106,6 @@ export default function Gemini({ setReqLang }) {
 
                 const textObj = await page.getTextContent();
                 const text = textObj.items.map((s) => s.str).join("");
-
                 await queryGemini(text);
               }}
             />
