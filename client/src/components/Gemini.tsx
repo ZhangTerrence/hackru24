@@ -90,29 +90,6 @@ export default function Gemini({ setReqLang }) {
 
   return (
     <>
-      <div
-        id="drop_zone"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-        style={{
-          border: "2px dashed #aaa",
-          padding: "20px",
-          borderRadius: "1rem",
-        }}
-      >
-        <p>Drag and drop your resume as a .pdf or .txt</p>
-      </div>
-      <form onSubmit={parseData}>
-        <label htmlFor="resume-submit">or upload your resume: </label>
-        <input
-          type="file"
-          className="resume-submit"
-          id="res-sub"
-          name="resume-submit"
-          accept=".txt, .pdf"
-        />
-        <button type="submit">Submit</button>
-      </form>
       {docUploaded ? (
         <>
           <Document file={{ data: pdfFile }}>
@@ -128,7 +105,6 @@ export default function Gemini({ setReqLang }) {
               }}
             />
           </Document>
-          <div>{responseText}</div>
         </>
       ) : (
         <div>
@@ -157,6 +133,12 @@ export default function Gemini({ setReqLang }) {
           </form>
         </div>
       )}
+
+      {responseTextGen ? (
+        <div className="gemini-resp">
+          <pre>{responseText}</pre>
+        </div>
+      ) : null}
     </>
   );
 }
