@@ -82,9 +82,10 @@
 .r-main-text {
   font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 
 .r-sub-text {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }

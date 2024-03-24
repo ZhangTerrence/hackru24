@@ -1,32 +1,12 @@
 import "../css/Home.css";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Upload } from "../components/Upload";
 
 export const Home = () => {
-  const [userLatitude, setUserLatitude] = useState(null);
-  const [userLongitude, setUserLongitude] = useState(null);
   const navigate = useNavigate();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const success = (position: any) => {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    setUserLatitude(latitude);
-    setUserLongitude(longitude);
-    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-    navigate("/searchJobs");
-  };
-
-  const error = () => {
-    console.log("Unable to retrieve your location");
-  };
-
-  const handleLocationClick = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(success, error);
-    } else {
-      console.log("Geolocation not supported");
-    }
+  const handleClick = () => {
+    navigate("/searchJobs", { state: { key: "value" } });
   };
 
   return (
@@ -48,6 +28,7 @@ export const Home = () => {
               <div className="l-sub-text">
                 Improve your resume using our AI-powered assistant
               </div>
+              <Upload />
             </div>
           </div>
           <div className="right">
@@ -56,9 +37,7 @@ export const Home = () => {
               <div className="r-sub-text">
                 Look for common requirements of jobs near you!
               </div>
-              <button onClick={() => handleLocationClick()}>
-                Allow location
-              </button>
+              <button onClick={() => handleClick()}>Try it out now!</button>
             </div>
           </div>
         </div>
