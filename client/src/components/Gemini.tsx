@@ -121,7 +121,7 @@ export default function Gemini() {
       ) : null}
 
       {responseTextGen ? (
-        <div className="gemini-resp">{responseText}</div>
+        <div className="gemini-resp"><pre>{responseText}</pre></div>
       ) : null}
     </>
   );
