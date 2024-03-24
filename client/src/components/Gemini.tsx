@@ -1,5 +1,8 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import * as pdfjsLib from "react-pdf";
+import { GoogleGenerativeAI } from "@google/generative-ai"
+import React, {useState} from "react"
+import { render } from "react-dom"
+import { Document, Page, pdfjs } from 'react-pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 export default function Gemini() {
   async function queryGemini(data: string | File, text: boolean) {
@@ -7,8 +10,14 @@ export default function Gemini() {
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
 
-    // console.log(data)
-    // console.log(apiKey)
+    
+    const [docUploaded, setDocUploaded] = useState(false)
+    const [pdfFile, setPdfFile] = useState(new Uint8Array())
+
+    async function queryGemini(data: string) {
+        const apiKey = import.meta.env.VITE_GEMINI_API
+        const gemini = new GoogleGenerativeAI(apiKey)
+        const model = gemini.getGenerativeModel({ model: "gemini-pro"})
 
     const prompt = "Please review my resume for me: " + data;
     // const prompt = data
@@ -27,43 +36,52 @@ export default function Gemini() {
       alert("Please select a file to upload");
       return;
     }
-    if (file?.type == "text/plain") {
-      const data = await file.text();
-      console.log(data);
-      // await queryGemini(data, true)
-    } else {
-      pdfjsLib.pdfjs.GlobalWorkerOptions.workerSrc = "pdf.worker.min.js";
-      const buf = await file.arrayBuffer();
-      const data = new Uint8Array(buf);
-
-      var doc = await pdfjsLib.pdfjs.getDocument(data).promise;
-
-      const pageList = await Promise.all(
-        Array.from({ length: doc.numPages }, (_, i) => doc.getPage(i + 1))
-      );
-      const textList = await Promise.all(
-        pageList.map((p) => p.getTextContent())
-      );
-      console.log(
-        textList.map(({ items }) => items.map((str) => str).join("")).join("")
-      );
-
-      //await queryGemini(file, false)
+    
+    async function parseData(event: React.FormEvent) {
+        event.preventDefault()
+        const file = (document.getElementById('res-sub') as HTMLInputElement).files?.[0]
+        console.log(file)
+        if (!file) {
+            alert('Please select a file to upload')
+            return
+        }
+        if(file?.type == "text/plain") {
+            const data = await file.text()
+            console.log(data)
+            await queryGemini(data)
+        } else {
+            
+            const buf = await file.arrayBuffer()
+            const data = new Uint8Array(buf)
+            setPdfFile(data)
+            setDocUploaded(true)            
+            //await queryGemini(file, false)
+        }     
+        // await queryGemini(data)
     }
     // await queryGemini(data)
   }
 
-  return (
-    <form onSubmit={parseData}>
-      <label htmlFor="resume-submit">Upload your resume:</label>
-      <input
-        type="file"
-        className="resume-submit"
-        id="res-sub"
-        name="resume-submit"
-        accept=".txt, .pdf, .doc, .docx"
-      />
-      <button type="submit">Submit</button>
-    </form>
-  );
+    return <>
+        <form onSubmit={parseData}>
+            <label htmlFor="resume-submit">Upload your resume:</label>
+            <input type="file" className="resume-submit" id="res-sub" name="resume-submit" accept=".txt, .pdf" />
+            <button type="submit">Submit</button>
+        </form>
+        {docUploaded ?<>
+        <Document file={{data: pdfFile}}>
+                <Page pageNumber={1} onLoadSuccess={async (page) => {
+            console.log('SUCCESS LOAD')
+            // console.log(page.getTextContent())
+            var textObj = await page.getTextContent()
+            var text = textObj.items.map((s) => s.str).join("")
+            // console.log(text)
+            await queryGemini(text)
+            }}/>
+            </Document>
+        
+        </>
+            : null}
+            
+        </>
 }
