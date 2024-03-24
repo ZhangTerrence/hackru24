@@ -10,7 +10,7 @@ import Gemini from "../components/Gemini";
 export const Home = () => {
   const [userLatitude, setUserLatitude] = useState(null);
   const [userLongitude, setUserLongitude] = useState(null);
-  const [userData, setUserData] = useState<(Data | null)[]>([]);
+  const [userData, setUserData] = useState<Data[]>([]);
   const [reqLang, setReqLang] = useState<string[]>([]);
 
   const getCoord = async (location: any) => {
@@ -25,7 +25,7 @@ export const Home = () => {
 
       const newData = myData.info;
 
-      const data = await Promise.all(
+      let data = await Promise.all(
         newData.map(async (item) => {
           if (item.location !== "Remote") {
             const res = await getCoord(item.location);
@@ -41,7 +41,9 @@ export const Home = () => {
           }
         })
       );
-      setUserData(data);
+      data = data.filter((e) => e);
+
+      setUserData(data as Data[]);
     };
     getData();
   }, []);
