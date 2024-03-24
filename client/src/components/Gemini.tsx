@@ -20,9 +20,14 @@ export default function Gemini({ setReqLang }) {
     // console.log(apiKey)
 
     const prompt =
-      "Please review my resume for me: " +
+      "You will be asked to review the following resume: " +
       data +
-      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{Language, Language, Language}. ";
+      `Your reply should be like the example reply. 
+      Example reply: 
+      Positives: Great Description
+      Negatives: Bad Description
+      Languages: Typescript, Python
+      `;
     // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
