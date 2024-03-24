@@ -62,7 +62,6 @@ export default function Gemini() {
           console.log(`file[0].name = ${file?.name}`);
         }
       };
-    }
   }
 
   async function handleDragOver(event: React.DragEvent) {
