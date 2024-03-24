@@ -4,7 +4,7 @@ import { render } from "react-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export default function Gemini() {
+export default function Gemini({ setReqLang }) {
   const [docUploaded, setDocUploaded] = useState(false);
   const [pdfFile, setPdfFile] = useState(new Uint8Array());
   const [responseText, setResponseText] = useState("");
@@ -17,12 +17,19 @@ export default function Gemini() {
     // console.log(data)
     // console.log(apiKey)
 
-    const prompt = "Please review my resume for me: " + data;
+    const prompt =
+      "Please review my resume for me: " +
+      data +
+      " Finally, based on this resume, please list a few programming languages that I use in the format Languages:{List Languages}. ";
     // const prompt = data
     const result = await model.generateContent(prompt);
     const response = await result.response;
     // console.log(response.text());
     setResponseText(response.text());
+    const position = response.text().split(":");
+    const length = position[position.length - 1];
+    console.log(length);
+
     console.log(responseText);
     console.log("Completed");
   }
@@ -54,14 +61,14 @@ export default function Gemini() {
     console.log("file dropped");
     event.preventDefault();
     if (event.dataTransfer.items) {
-      [...event.dataTransfer.items].forEach((item,i) => {
+      [...event.dataTransfer.items].forEach((item, i) => {
         if (item.kind === "file") {
           const file = item.getAsFile();
           console.log(`file[${i}].name = ${file.name}`);
         }
       });
     } else {
-      [...event.dataTransfer.files].forEach((file,i) => {
+      [...event.dataTransfer.files].forEach((file, i) => {
         console.log(`file[${i}].name = ${file.name}`);
       });
     }
@@ -74,24 +81,6 @@ export default function Gemini() {
 
   return (
     <>
-      <div 
-        id="drop_zone" 
-        onDrop={(handleDrop)} 
-        onDragOver={handleDragOver} 
-        style={{ border: "2px dashed #aaa", padding: "20px", borderRadius: "1rem" }}>
-        <p>Drag and drop your resume as a .pdf or .txt</p>
-      </div>
-      <form onSubmit={parseData}>
-        <label htmlFor="resume-submit">or upload your resume: </label>
-        <input
-          type="file"
-          className="resume-submit"
-          id="res-sub"
-          name="resume-submit"
-          accept=".txt, .pdf"
-        />
-        <button type="submit">Submit</button>
-      </form>
       {docUploaded ? (
         <>
           <Document file={{ data: pdfFile }}>
@@ -100,16 +89,43 @@ export default function Gemini() {
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
                 // console.log(page.getTextContent())
-                var textObj = await page.getTextContent();
-                var text = textObj.items.map((s) => s.str).join("");
+                const textObj = await page.getTextContent();
+                const text = textObj.items.map((s) => s.str).join("");
+
                 // console.log(text)
                 await queryGemini(text);
               }}
             />
           </Document>
-          {{responseText}}
+          <div>{responseText}</div>
         </>
-      ) : null}
+      ) : (
+        <div>
+          <div
+            id="drop_zone"
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
+            style={{
+              border: "2px dashed #aaa",
+              padding: "20px",
+              borderRadius: "1rem",
+            }}
+          >
+            <p>Drag and drop your resume as a .pdf or .txt</p>
+          </div>
+          <form onSubmit={parseData}>
+            <label htmlFor="resume-submit">or upload your resume: </label>
+            <input
+              type="file"
+              className="resume-submit"
+              id="res-sub"
+              name="resume-submit"
+              accept=".txt, .pdf"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      )}
     </>
   );
 }

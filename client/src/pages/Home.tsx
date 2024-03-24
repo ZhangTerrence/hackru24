@@ -1,16 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "../css/Home.css";
 import { useState, useEffect } from "react";
-import { Upload } from "../components/Upload";
+
 import SimpleMap from "../components/SimpleMap";
 import myData from "../data.json";
 import { setKey, fromAddress } from "react-geocode";
 import { Test } from "../types";
+import Gemini from "../components/Gemini";
 
 export const Home = () => {
   const [userLatitude, setUserLatitude] = useState(null);
   const [userLongitude, setUserLongitude] = useState(null);
   const [userData, setUserData] = useState<Test[]>([]);
+  const [reqLang, setReqLang] = useState("");
 
   const getCoord = async (location: any) => {
     const geo = await fromAddress(location);
@@ -90,7 +92,7 @@ export const Home = () => {
               <div className="l-sub-text">
                 Improve your resume using our AI-powered assistant
               </div>
-              <Upload />
+              <Gemini setReqLang={setReqLang} />
             </div>
           </div>
           <div className="right">
