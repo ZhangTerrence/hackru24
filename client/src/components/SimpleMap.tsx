@@ -25,7 +25,7 @@ const SimpleMap = ({
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png"
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         maxZoom={20}
       />
       <Marker position={[latitude, longitude]}>
