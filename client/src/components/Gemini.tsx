@@ -26,6 +26,10 @@ export default function Gemini() {
     // console.log(response.text());
     setResponseText(response.text());
     console.log(responseText);
+
+    const position = response.text().split(":").pop();
+    console.log(position);
+
     setResponseTextGen(true);
     console.log("Completed");
   }
@@ -64,56 +68,58 @@ export default function Gemini() {
       }
     }
   }
+
+  async function handleDragOver(event: React.DragEvent) {
+    console.log("File in the drop zone");
+    event.preventDefault();
+  }
+
+  return (
+    <>
+      <div
+        id="drop_zone"
+        onDrop={handleDrop}
+        onDragOver={handleDragOver}
+        style={{
+          border: "2px dashed #aaa",
+          padding: "20px",
+          borderRadius: "1rem",
+        }}
+      >
+        <p>Drag and drop your resume as a .pdf or .txt</p>
+      </div>
+      <form onSubmit={parseData}>
+        <label htmlFor="resume-submit">or upload your resume: </label>
+        <input
+          type="file"
+          className="resume-submit"
+          id="res-sub"
+          name="resume-submit"
+          accept=".txt, .pdf"
+        />
+        <button type="submit">Submit</button>
+      </form>
+      {docUploaded ? (
+        <>
+          <Document file={{ data: pdfFile }}>
+            <Page
+              pageNumber={1}
+              onLoadSuccess={async (page) => {
+                console.log("SUCCESS LOAD");
+                // console.log(page.getTextContent())
+                const textObj = await page.getTextContent();
+                const text = textObj.items.map((s) => s.str).join("");
+                // console.log(text)
+                await queryGemini(text);
+              }}
+            />
+          </Document>
+        </>
+      ) : null}
+
+      {responseTextGen ? (
+        <div className="gemini-resp">{responseText}</div>
+      ) : null}
+    </>
+  );
 }
-
-async function handleDragOver(event: React.DragEvent) {
-  console.log("File in the drop zone");
-  event.preventDefault();
-}
-
-return (
-  <>
-    <div
-      id="drop_zone"
-      onDrop={handleDrop}
-      onDragOver={handleDragOver}
-      style={{
-        border: "2px dashed #aaa",
-        padding: "20px",
-        borderRadius: "1rem",
-      }}
-    >
-      <p>Drag and drop your resume as a .pdf or .txt</p>
-    </div>
-    <form onSubmit={parseData}>
-      <label htmlFor="resume-submit">or upload your resume: </label>
-      <input
-        type="file"
-        className="resume-submit"
-        id="res-sub"
-        name="resume-submit"
-        accept=".txt, .pdf"
-      />
-      <button type="submit">Submit</button>
-    </form>
-    {docUploaded ? (
-      <>
-        <Document file={{ data: pdfFile }}>
-          <Page
-            pageNumber={1}
-            onLoadSuccess={async (page) => {
-              console.log("SUCCESS LOAD");
-              // console.log(page.getTextContent())
-              const textObj = await page.getTextContent();
-              const text = textObj.items.map((s) => s.str).join("");
-              // console.log(text)
-              await queryGemini(text);
-            }}
-          />
-        </Document>
-      </>
-    ) : null}
-
-    {responseTextGen ? <div className="gemini-resp">{responseText}</div> : null}
-  </>
-);
