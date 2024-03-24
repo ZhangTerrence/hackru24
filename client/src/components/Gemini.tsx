@@ -1,14 +1,17 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import "../css/Gemini.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Gemini() {
   const [docUploaded, setDocUploaded] = useState(false);
   const [pdfFile, setPdfFile] = useState(new Uint8Array());
   const [responseText, setResponseText] = useState("");
+  const [responseTextGen, setResponseTextGen] = useState(false);
 
   async function queryGemini(data: string) {
+    setDocUploaded(false)
     const apiKey = import.meta.env.VITE_GEMINI_API;
     const gemini = new GoogleGenerativeAI(apiKey);
     const model = gemini.getGenerativeModel({ model: "gemini-pro" });
@@ -18,6 +21,7 @@ export default function Gemini() {
     const response = await result.response;
     setResponseText(response.text());
     console.log(responseText);
+    setResponseTextGen(true);
     console.log("Completed");
   }
 
@@ -46,17 +50,26 @@ export default function Gemini() {
     console.log("file dropped");
     event.preventDefault();
     if (event.dataTransfer.items) {
-      [...event.dataTransfer.items].forEach((item, i) => {
-        if (item.kind === "file") {
-          const file = item.getAsFile();
-          console.log(`file[${i}].name = ${file?.name ?? ""}`);
+        if (event.dataTransfer.items[0].kind === "file") {
+          const file = event.dataTransfer.items[0].getAsFile()
+          if(!file) {
+            alert("Please select a file to upload")
+            return
+          }
+          console.log(`file[0].name = ${file?.name}`)
+          if (file?.type == "text/plain") {
+            const data = await file.text();
+            console.log(data);
+            await queryGemini(data);
+          } else {
+            const buf = await file.arrayBuffer();
+            const data = new Uint8Array(buf);
+            setPdfFile(data);
+            setDocUploaded(true);
+            //await queryGemini(file, false)
+          }
         }
-      });
-    } else {
-      [...event.dataTransfer.files].forEach((file, i) => {
-        console.log(`file[${i}].name = ${file.name}`);
-      });
-    }
+      };
   }
 
   async function handleDragOver(event: React.DragEvent) {
@@ -96,14 +109,19 @@ export default function Gemini() {
               pageNumber={1}
               onLoadSuccess={async (page) => {
                 console.log("SUCCESS LOAD");
+
                 const textObj = await page.getTextContent();
                 const text = textObj.items.map((s) => s.str).join("");
+
                 await queryGemini(text);
               }}
             />
           </Document>
-          {{ responseText }}
         </>
+      ) : null}
+
+      {responseTextGen ? (
+        <div className="gemini-resp">{responseText}</div>
       ) : null}
     </>
   );
