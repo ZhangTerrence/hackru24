@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import type { Data } from "../types";
+import "leaflet/dist/leaflet.css";
 
 const SimpleMap = ({
   latitude,
@@ -44,7 +44,6 @@ const SimpleMap = ({
                   </div>
                   {item.skills.join(", ")}
                 </p>
-                <p>{queryString}</p>
               </Popup>
             </Marker>
           );
