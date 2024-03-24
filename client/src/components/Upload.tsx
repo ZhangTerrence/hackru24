@@ -6,7 +6,6 @@ export const Upload = () => {
     <>
       <section className="upload-wrapper">
         <Gemini />
-        <p className="upload-main-text">Upload resume</p>
       </section>
     </>
   );
